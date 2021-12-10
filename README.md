@@ -10,3 +10,6 @@
 
 ## REST API
 Dokumentasi https://documenter.getpostman.com/view/9869858/UVR4NVFW
+
+##### AUTH
+> Autentikasi API menggunakan header `Authorization` isinya ada di dashboard->klik nama profile
