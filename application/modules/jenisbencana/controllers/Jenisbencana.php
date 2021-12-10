@@ -19,7 +19,7 @@ class Jenisbencana extends CI_Controller {
 		// query builder for get
 		$this->db->select('jenis_bencana.id,jenis_bencana.jenis_bencana,jenis_bencana.icon,jenis_bencana.color,count(bencana.id) as total');
 		$this->db->from('jenis_bencana');
-		$this->db->join('bencana', 'bencana.jenis_bencana_id = jenis_bencana.id');
+		$this->db->join('bencana', 'bencana.jenis_bencana_id = jenis_bencana.id','left');
 		$this->db->group_by('jenis_bencana.id');
 		$data["jenisb"]=$this->db->get()->result_array();
         $this->template->load('template','v_jenisbencana',$data);
