@@ -34,7 +34,7 @@ class Databencana extends CI_Controller {
 	}
 	public function do_post(){
 		$config['upload_path']          = './uploads/';
-		$config['allowed_types']        = 'gif|jpg|png';
+		$config['allowed_types']        = 'gif|jpg|png|jpeg';
 		$config['max_size']             = 2100;
 		$config['max_width']            = 3024;
 		$config['max_height']           = 2768;
@@ -48,7 +48,7 @@ class Databencana extends CI_Controller {
 			if ( ! $this->upload->do_upload('userfile'))
 			{
 				$error = array('error' => $this->upload->display_errors());
-				echo $fm_id." upload error: ".json_encode($error);
+				//echo $fm_id." upload error: ".json_encode($error);
 				$this->session->set_flashdata('msgr', 'ERROR: upload gambar terlalu besar, max 2mb');
 				header("Location: /databencana");
 			}
