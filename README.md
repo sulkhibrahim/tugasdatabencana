@@ -1,8 +1,9 @@
 # petabencana
 
-1. Download `databencana.sql` dan import ke mysqlnya
-2. Atur `$config['base_url']` pada `application/config/config.php`
-3. Atur mysql credential di `application/config/database.php`
-4. Login menggunakan: 
+1. Download `databencana.sql`
+2. Buat database baru di MySQL bernama `databencana` dan import data sqlnya
+3. Atur `$config['base_url']` pada `application/config/config.php`
+4. Atur mysql credential di `application/config/database.php`
+5. Login menggunakan: 
     - email: sulkhi25@gmail.com
     - password: `sulkhi`
